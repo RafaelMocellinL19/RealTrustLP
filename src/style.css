@@ -1,0 +1,324 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 50%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: acumin-pro, system-ui, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    background-color:#000000;
+    align-items: start;
+    min-height: 100vh;
+  }
+  img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+.esconder-seta{
+    opacity: 0;
+}
+
+.mostrar-seta{
+    opacity: 1;
+}
+
+.logo .imagem{
+    width: 100px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    max-width: 1170px;
+    margin: auto;
+    flex-wrap: wrap;    
+}
+#about{
+  width: 30px;
+  color: white;
+}
+  #phone{
+    width: 30px;
+    color: white;
+}
+  
+#hub{
+  width: 30px;
+  color: white;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo .titulo{
+    margin-left: 7px;
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+    font-weight: 800;
+}
+
+.logo .titulo:hover{
+    color:white;
+}
+
+.cabecalho .menu{
+    display: flex;    
+    
+}
+
+.cabecalho .item{
+    margin: 12px;
+    
+}
+
+.cabecalho .item a{
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.cabecalho .item a:hover{
+    background-color: #414142;
+    color: white;
+}
+
+main section{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main section .imagem-painel{
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center center; 
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+main .projeto1{
+    background-image: url(../src/images/casa1.jpg)
+}
+
+main .projeto2{
+    background-image: url(../src/images/casa2.jpg);
+}
+
+main .projeto3{
+    background-image: url(../src/images/casa3.jpg);
+}
+
+main section .imagem-painel.mostrar{
+    opacity: 1;
+}
+
+main section .titulo{
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+}
+
+main section .seta{
+    background-image: url(../src/images/seta.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+main section .btn-voltar{
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+main section .btn-avancar{
+    right: 20px;
+}
+
+.quem-somos{
+    background-color: rgb(78, 79, 81);
+   width: 100%;
+   height: 100%;
+}
+
+.quem-somos .conteudo{
+    display: flex;
+    align-items: center;
+    padding: 0px 7%;
+}
+
+.quem-somos .informacoes{
+    width:40%;
+}
+
+.quem-somos .imagem{
+    width: 30%;
+    margin: 15px;
+}
+
+
+.quem-somos .titulo{
+    font-size: 50px;
+    color:rgb(190, 216, 179);
+    margin-bottom: 20px;
+}
+
+.quem-somos .texto{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ffff;
+    font-weight: 400;
+}
+
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: rgb(30, 215, 96);
+    background-color: rgb(78, 79, 81);
+    border-top: 1px solid rgb(78, 79, 81);
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 2rem;
+    
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  .footer__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: max-content;
+    background-color:rgb(190, 216, 179);
+    border-radius: 100px;
+    color: rgb(30, 215, 96);
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+      flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #999;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+  
+    .footer__addr {
+      flex: 1 0px;
+    }
+  
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+
+
+  .more{
+    color:rgb(190, 216, 179);
+    font-size: larger;
+    font-weight: bold;
+  }
